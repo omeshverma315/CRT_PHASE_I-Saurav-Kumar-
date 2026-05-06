@@ -1,41 +1,25 @@
 #include <iostream>
 using namespace std;
-
-// Class definition
-class Student {
-private:
-    string name;
-    int age;
-    float marks;
-
+class Student
+{
 public:
-    // Function to take input
-    void input() {
-        cout << "Enter name: ";
-        cin >> name;
+    // Data members
+    string name;
+    int rollno;
 
-        cout << "Enter age: ";
-        cin >> age;
-
-        cout << "Enter marks: ";
-        cin >> marks;
-    }
-
-    // Function to display data
-    void display() {
-        cout << "\nStudent Details:" << endl;
-        cout << "Name: " << name << endl;
-        cout << "Age: " << age << endl;
-        cout << "Marks: " << marks << endl;
+    // member function
+    void display()
+    {
+        cout << "Name:" << name << endl;
+        cout << "Roll No:" << rollno << endl;
     }
 };
-
-// Main function
-int main() {
-    Student s1;   // Object creation
-
-    s1.input();   // Calling input function
-    s1.display(); // Calling display function
+int main()
+{
+    Student s1;
+    s1.name = "Omesh";
+    s1.rollno = 22;
+    s1.display();
 
     return 0;
 }
