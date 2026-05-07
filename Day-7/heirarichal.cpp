@@ -61,7 +61,6 @@ int main()
 
     cout << "Cricketer Details " << endl;
     c1.showCricketer();
-    cout << endl;
     cout << "Footballer Details" << endl;
     f1.showFootballer();
 
